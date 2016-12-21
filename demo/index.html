@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>andrelfpinto-icons demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../andrelfpinto-icons.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+      iron-icon {
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+      }
+      iron-icon:hover {
+        fill: var(--google-yellow-700);
+      }
+      .set {
+        margin: auto;
+        padding: 1em 0;
+        border-bottom: 1px solid silver;
+        color: var(--paper-grey-700);
+        @apply(--layout-horizontal);
+        @apply(--layout-wrap);
+      }
+      .set:last-of-type {
+        border-bottom: none;
+      }
+      .container {
+        min-width: 10em;
+        padding: 1em 0.5em;
+        text-align: center;
+        @apply(--layout-vertical);
+        @apply(--layout-center);
+        @apply(--layout-flex);
+      }
+      .container > div {
+        margin-top: 0.5em;
+        color: black;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>andrelfpinto</h2>
+
+    <div class="set">
+        <span class="container">
+          <iron-icon icon="andrelfpinto:multibox-blank"></iron-icon>
+          <div>andrelfpinto:multibox-blank</div>
+        </span>
+        <span class="container">
+          <iron-icon icon="andrelfpinto:multibox-true"></iron-icon>
+          <div>andrelfpinto:multibox-true</div>
+        </span>
+        <span class="container">
+          <iron-icon icon="andrelfpinto:multibox-false"></iron-icon>
+          <div>andrelfpinto:multibox-false</div>
+        </span>
+    </div>
+  </body>
+</html>
